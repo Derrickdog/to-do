@@ -8,12 +8,9 @@ body{
 }
 
 header{
-    /* background-color: #1258DC;
-    color: #DEE9FC; */
     background-color: #333;
     color: white;
     padding: 24px;
-    /* text-align: center; */
     font-size: 1.5rem;
 }
 
@@ -28,7 +25,6 @@ nav, main {
 nav{
     width: 230px;
     height: 100vh;
-    /* background-color: #DEE9FC; */
     background-color: #DDD;
 }
 
@@ -39,42 +35,40 @@ h2{
 
 .nav-btn{
     margin-bottom: 2px;
-    /* padding: 16px; */
     width: 100%;
     font-size: 1rem;
     text-align: left;
     padding: 12px 8px;
     border: none;
     border-radius: 5px;
-    /* background-color: #DEE9FC; */
     background-color: #DDD;
 }
 
 .nav-btn:hover{
-    /* background-color: #6395F2; */
     background-color: #CCC;
     cursor: pointer;
 }
 
 .active{
-    /* background-color: #6395F2; */
     background-color: #CCC;
 }
 
 main{
-    /* width: 1000px; */
     width: 800px;
 }
 
 .add-item, .item{
-    margin-bottom: 2px;
     width: 100%;
     font-size: 1rem;
     text-align: left;
-    padding: 12px 8px;
+    padding: 10px 8px;
     border: none;
     border-radius: 5px;
     background-color: white;
+}
+
+.add-item{
+    margin-top: 8px;
 }
 
 .add-item:hover{
@@ -87,8 +81,6 @@ main{
     border: none;
     border-radius: 5px;
     background-color: white;
-    display: flex;
-    align-items: center;
 }
 
 .item-btn:hover{
@@ -105,4 +97,8 @@ main{
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.x{
+    font-size: 1rem;
 }
