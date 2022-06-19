@@ -8,10 +8,10 @@ body{
 }
 
 header{
-    background-color: #1258DC;
-    color: #DEE9FC;
-    /* background-color: #333;
-    color: white; */
+    /* background-color: #1258DC;
+    color: #DEE9FC; */
+    background-color: #333;
+    color: white;
     padding: 24px;
     /* text-align: center; */
     font-size: 1.5rem;
@@ -21,9 +21,66 @@ header{
     display: flex;
 }
 
+nav, main {
+    padding: 20px;
+}
+
 nav{
-    width: 250px;
+    width: 230px;
     height: 100vh;
-    background-color: #DEE9FC;
-    /* background-color: #DDD; */
+    /* background-color: #DEE9FC; */
+    background-color: #DDD;
+}
+
+h2{
+    font-size: 2rem;
+    padding-bottom: 16px;
+}
+
+.nav-btn{
+    margin-bottom: 2px;
+    /* padding: 16px; */
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    padding: 12px 8px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #DEE9FC; */
+    background-color: #DDD;
+}
+
+.nav-btn:hover{
+    /* background-color: #6395F2; */
+    background-color: #CCC;
+    cursor: pointer;
+}
+
+.active{
+    /* background-color: #6395F2; */
+    background-color: #CCC;
+}
+
+main{
+    /* width: 1000px; */
+    width: 100%;
+}
+
+.add-item{
+    margin-bottom: 2px;
+    /* padding: 16px; */
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    padding: 12px 8px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #DEE9FC; */
+    background-color: white;
+}
+
+.add-item:hover{
+    /* background-color: #6395F2; */
+    background-color: #DDD;
+    cursor: pointer;
 }
