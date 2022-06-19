@@ -98,3 +98,27 @@ main{
     align-items: center;
     gap: 8px;
 }
+
+.add-input{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    visibility: hidden;
+}
+
+.add-box{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 8px 0 8px 8px;
+    width: 100%;
+}
+
+.add-btn{
+    background-color: #DDD;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.add-btn:hover{
+    background-color: #CCC;
+}
