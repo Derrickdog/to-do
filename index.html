@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c3455b9484.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -15,20 +16,20 @@
         <nav>
             <h2>Lists</h2>
             <button class="nav-btn active">To Do</button><br>
-            <button class="nav-btn">+ Add List</button>
+            <button class="nav-btn"><i class="fas fa-plus"></i> Add List</button>
         </nav>
         <main>
             <h2 class="current-list">To Do</h2>
             <div class="items">
                 <div class="item">
                     <div class="task">
-                        <button class="item-btn">O</button>
+                        <button class="item-btn"><i class="far fa-circle"></i></button>
                         Finish List
                     </div>
-                    <button class="item-btn x">X</button>
+                    <button class="item-btn"><i class="fas fa-xmark"></i></button>
                 </div>
             </div>
-            <button class="add-item">+ Add Item</button>
+            <button class="add-item"><i class="fas fa-plus"></i> Add Item</button>
         </main>
     </div>
     <script src="index.js"></script>
