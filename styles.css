@@ -63,24 +63,46 @@ h2{
 
 main{
     /* width: 1000px; */
-    width: 100%;
+    width: 800px;
 }
 
-.add-item{
+.add-item, .item{
     margin-bottom: 2px;
-    /* padding: 16px; */
     width: 100%;
     font-size: 1rem;
     text-align: left;
     padding: 12px 8px;
     border: none;
     border-radius: 5px;
-    /* background-color: #DEE9FC; */
     background-color: white;
 }
 
 .add-item:hover{
-    /* background-color: #6395F2; */
     background-color: #DDD;
     cursor: pointer;
+}
+
+.item-btn {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.item-btn:hover{
+    cursor: pointer;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

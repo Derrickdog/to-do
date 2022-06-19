@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -18,7 +19,16 @@
             <button class="nav-btn">+ Add List</button>
         </nav>
         <main>
-            <h2 id="current-list">To Do</h2>
+            <h2 class="current-list">To Do</h2>
+            <div class="items">
+                <div class="item">
+                    <div class="task">
+                        <button class="item-btn"><span class="material-symbols-outlined">radio_button_unchecked</span></button>
+                        Eat Breakfast
+                    </div>
+                    <button class="item-btn x"><span class="material-symbols-outlined">close</span></button>
+                </div>
+            </div>
             <button class="add-item">+ Add Item</button>
         </main>
     </div>
