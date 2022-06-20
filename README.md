@@ -1,2 +1,2 @@
 # to-do
-https://derrickdog.github.io/to-do-list/
+https://derrickdog.github.io/to-do-lists/
