@@ -50,9 +50,6 @@ function addItem(){
     hideAddItem();
 }
 
-document.getElementById('circle-btn').addEventListener('click', circleClose);
-document.getElementById('x-btn').addEventListener('click', xClose);
-
 function circleClose(e) {
     e.target.parentNode.parentNode.parentNode.remove();
 }
