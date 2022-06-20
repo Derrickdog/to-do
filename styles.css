@@ -126,3 +126,7 @@ main{
 .add-btn:hover{
     background-color: #CCC;
 }
+
+#list-input{
+    display: none;
+}

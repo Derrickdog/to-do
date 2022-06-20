@@ -15,23 +15,27 @@
     <div class="container">
         <nav>
             <h2>Lists</h2>
-            <button class="nav-btn active">To Do</button><br>
-            <button class="nav-btn"><i class="fas fa-plus"></i> Add List</button>
-            <div class="add-input">
-                <input type="text" class="add-box">
-                <button class="item-btn add-btn">Add</button>
+            <div class="btns">
+                <button class="nav-btn active" id="To Do">To Do</button><br>
+            </div>
+            <button class="nav-btn" id="list-add"><i class="fas fa-plus"></i> Add List</button>
+            <div class="add-input" id="list-input">
+                <input type="text" class="add-box" id="list-text">
+                <button class="item-btn add-btn" id="list-btn">Add</button>
             </div>
         </nav>
         <main>
-            <h2 class="current-list">To Do</h2>
-            <div class="items">
-                <!-- <div class="item">
-                    <div class="task">
-                        <button class="item-btn" id="circle-btn"><i class="far fa-circle"></i></button>
-                        <span>Finish List</span>
-                    </div>
-                    <button class="item-btn" id="x-btn"><i class="fas fa-xmark"></i></button>
-                </div> -->
+            <h2 class="current-list" id="current-head">To Do</h2>
+            <div id="all-items">
+                <div id="To Dodiv" class="current">
+                    <!-- <div class="item">
+                        <div class="task">
+                            <button class="item-btn" id="circle-btn"><i class="far fa-circle"></i></button>
+                            <span>Finish List</span>
+                        </div>
+                        <button class="item-btn" id="x-btn"><i class="fas fa-xmark"></i></button>
+                    </div> -->
+                </div>
             </div>
             <button class="add-item"><i class="fas fa-plus"></i> Add Item</button>
             <div class="add-input" id="add-input">
