@@ -19,13 +19,44 @@ function hideAddItem() {
 }
 
 function addItem(){
-    const text = itemText.value;
     const newItem = document.createElement('div');
     newItem.classList.add('item');
-    newItem.innerHTML = '<div class="task"><button class="item-btn"><i class="far fa-circle"></i></button>' + text +
-        '</div><button class="item-btn"><i class="fas fa-xmark"></i></button>'
-    items.appendChild(newItem);
 
+    const task = document.createElement('div');
+    task.classList.add('task');
+
+    const circleBtn = document.createElement('button');
+    circleBtn.classList.add('item-btn');
+    circleBtn.id = 'circle-btn';
+    circleBtn.innerHTML = '<i class="far fa-circle"></i>';
+    circleBtn.addEventListener('click', circleClose);
+    task.appendChild(circleBtn);
+
+    const p = document.createElement('p');
+    p.textContent = itemText.value;
+    task.appendChild(p);
+
+    const xBtn = document.createElement('button');
+    xBtn.classList.add('item-btn');
+    xBtn.id = 'x-btn';
+    xBtn.innerHTML = '<i class="fas fa-xmark"></i>';
+    xBtn.addEventListener('click', xClose);
+
+    newItem.appendChild(task);
+    newItem.appendChild(xBtn);
+
+    items.appendChild(newItem);
+    
     hideAddItem();
 }
 
+document.getElementById('circle-btn').addEventListener('click', circleClose);
+document.getElementById('x-btn').addEventListener('click', xClose);
+
+function circleClose(e) {
+    e.target.parentNode.parentNode.parentNode.remove();
+}
+
+function xClose(e) {
+    e.target.parentNode.parentNode.remove();
+}
