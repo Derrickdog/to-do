@@ -103,7 +103,10 @@ main{
     display: flex;
     align-items: center;
     gap: 8px;
-    visibility: hidden;
+}
+
+#add-input{
+    display: none;
 }
 
 .add-box{
